@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {background-color: powderblue;}
+        h1   {color: blue;}
+        p    {color: red;}
+        </style>
+    <title>Form Example</title>
+</head>
+<body>
+    <h1>Form Example</h1>
+    <form action="submit.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="rollno">Roll No:</label>
+        <input type="text" id="rollno" name="rollno" required><br><br>
+
+        <label>Branch Selection:</label><br>
+        <input type="radio" id="cse" name="branch" value="CSE">
+        <label for="cse">CSE</label><br>
+        <input type="radio" id="ece" name="branch" value="ECE">
+        <label for="ece">ECE</label><br>
+        <input type="radio" id="mech" name="branch" value="Mechanical">
+        <label for="mech">Mechanical</label><br><br>
+
+        <label>Interests:</label><br>
+        <input type="checkbox" id="webdev" name="interests[]" value="Web Development">
+        <label for="webdev">Web Development</label><br>
+        <input type="checkbox" id="python" name="interests[]" value="Python">
+        <label for="python">Python</label><br>
+        <input type="checkbox" id="java" name="interests[]" value="Java">
+        <label for="java">Java</label><br>
+        <input type="checkbox" id="aiml" name="interests[]" value="AI/ML">
+        <label for="aiml">AI/ML</label><br>
+        <input type="checkbox" id="blockchain" name="interests[]" value="Blockchain">
+        <label for="blockchain">Blockchain</label><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
